@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  background-image: radial-gradient(circle at top left, #1f1f1f, #000);
+  font-family: 'Orbitron', sans-serif;
+  color: #e0e0e0;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+  border-bottom: 2px solid #00ffcc;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+header p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-left: 5px solid #00ffcc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px #00ffcc55;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #00ffccaa;
+}
+
+.card h2 {
+  font-size: 1.8em;
+  color: #00ffcc;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.card img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffcc33;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  font-size: 0.9em;
+  color: #888;
+  border-top: 1px solid #00ffcc33;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}

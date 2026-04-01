@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2e1f0f;
+  background-image: url('https://media.istockphoto.com/id/2056881829/fr/vectoriel/fond-de-jungle-pr%C3%A9historique-vectoriel-sans-couture-avec-des-dinosaures-tyrannosaurus.jpg?s=612x612&w=0&k=20&c=hHftIfsEMPLfB5CoBjTQTe4_iVNrv5llMCPe0RIflpY=');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Caesar Dressing', cursive;
+  color: #f5f5dc;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 6px #000;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+.card {
+  background-color: #ffffff0d;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h2 {
+  font-size: 1.8em;
+  color: #e0b13f;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.1em;
+  font-family: 'Roboto Slab', serif;
+  color: #f5f5dc;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1208;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  padding: 10px;
+  background-image: url('https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000069166/34da863b30cb31f0780de309d9763a0a65cc5147622508cdbfd0768d5422a9fe');
+  background-size: cover;
+
+}
+header {
+  padding: 20px;
+  text-align: center;
+  margin:15px;
+}
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #ffd500;
+  text-shadow: 2px 2px #ff2222;
+}
+
+header p {
+  font-size: 3em;
+  color: #ffd500;
+  text-shadow: 2px 2px #ff2222;
+}
+
+nav {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #ffd500;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+  text-shadow: 2px 2px #ff2222;
+}
+
+nav a:hover {
+  color: #ff2222;
+  text-shadow: 2px 2px #ffd500;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+  font-family: 'Caesar Dressing', cursive;
+}
+
+main h2{
+    font-size: 3em;
+  color: #ffd500;
+  text-shadow: 2px 2px #ff2222;
+}
+
+p{
+    font-size: 3em;
+  color: #ffd500;
+  text-shadow: 2px 2px #ff2222;
+}

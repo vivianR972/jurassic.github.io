@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #8B5A2B; 
+  background-image: url('https://media.istockphoto.com/id/2056881829/fr/vectoriel/fond-de-jungle-pr%C3%A9historique-vectoriel-sans-couture-avec-des-dinosaures-tyrannosaurus.jpg?s=612x612&w=0&k=20&c=hHftIfsEMPLfB5CoBjTQTe4_iVNrv5llMCPe0RIflpY='); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Caesar Dressing', cursive;
+  color: #f5f5dc; 
+}
+
+nav {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #533923;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+  text-shadow: 2px 2px #000000;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-shadow: 2px 2px #533923;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #533923;
+}
+
+body p {
+    text-transform: uppercase;
+    color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 2px 1px rgb(83, 57, 35);
+}
+
+
+.card {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin: 20px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+  color: #4caf50;
+}
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(5);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.galerie img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+
+.galerie img:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+  box-shadow: 0 0 20px #3e2c1c;
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h5{
+    text-align: center ;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  
+}
+
+.card p {
+  font-size: 1.1em;
+  text-align: center;
+}

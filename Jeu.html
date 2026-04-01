@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Échappe au T-Rex !</title>
+<link rel="stylesheet" href="./css/style11.css">
+</head>
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="Jurassic Park.html">Jurassic Park</a>
+    <a href="Films.html">Films</a>
+    <a href="Dinosaures.html">Dinosaures</a>
+    <a href="Personnages.html">Personnages</a>
+    <a href="Cartes.html">Cartes</a>
+    <a href="Jurassic World.html">Jurassic World</a>
+    <a href="Jeu.html">Jeu</a>
+
+  </nav>
+<body>
+  <h1>🦖 Échappe au T-Rex !</h1>
+  <div id="game">
+    <div class="question" id="question">Chargement...</div>
+    <div id="answers"></div>
+    <div id="status"></div>
+  </div>
+
+  <script>
+    const questions = [
+      {
+        q: "Quel est le nom du parc dans le premier film ?",
+        options: ["Jurassic World", "Dino Island", "Jurassic Park", "Prehistoric Land"],
+        answer: 2
+      },
+      {
+        q: "Quel dinosaure est le principal antagoniste dans 'Jurassic World' ?",
+        options: ["T-Rex", "Indominus Rex", "Velociraptor", "Spinosaurus"],
+        answer: 1
+      },
+      {
+        q: "Qui est le créateur du parc ?",
+        options: ["Alan Grant", "John Hammond", "Owen Grady", "Ian Malcolm"],
+        answer: 1
+      },
+      {
+        q: "Qui est le dompteur de raptors?",
+        options: ["Alan Grant", "Claire Dearing", "Owen Grady", "Ian Malcolm"],
+        answer: 2
+      },
+      {
+        q: "Comment les dinosaures se sont echapées du parc ?(Jurassic ParkI)",
+        options: ["une tornade a cassé les barrières", "panne d'éléctricité", "un dinosaure en liberté a foncer dans les barrières", "les visiteurs ont fait un trou dans les barrières à chaque fois qu'ils visitaient un enclo "],
+        answer: 1
+      }
+    ];
+
+    let current = 0;
+    let mistakes = 0;
+
+    function loadQuestion() {
+      if (current >= questions.length) {
+        document.getElementById("question").textContent = "Bravo ! Tu as échappé au T-Rex !";
+        document.getElementById("answers").innerHTML = "";
+        return;
+      }
+
+      const q = questions[current];
+      document.getElementById("question").textContent = q.q;
+      document.getElementById("answers").innerHTML = "";
+
+      q.options.forEach((opt, i) => {
+        const btn = document.createElement("button");
+        btn.textContent = opt;
+        btn.onclick = () => checkAnswer(i);
+        document.getElementById("answers").appendChild(btn);
+      });
+    }
+
+    function checkAnswer(i) {
+      if (i === questions[current].answer) {
+        document.getElementById("status").textContent = "Bonne réponse !";
+      } else {
+        mistakes++;
+        document.getElementById("status").textContent = `Mauvaise réponse ! Le T-Rex se rapproche... (${mistakes}/3)`;
+        if (mistakes >= 3) {
+          document.getElementById("question").textContent = "💀 Le T-Rex t'a attrapé !";
+          document.getElementById("answers").innerHTML = "";
+          return;
+        }
+      }
+      current++;
+      setTimeout(() => {
+        document.getElementById("status").textContent = "";
+        loadQuestion();
+      }, 1500);
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>

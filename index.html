@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jurassic Park & World</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <audio id="trex-sound" preload="auto">
+    <source src="./audio/T.REX ROAR - Sound Design - Pierre Mendola.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const card = document.getElementById('danger-card');
+      const sound = document.getElementById('trex-sound');
+
+      card.addEventListener('click', () => {
+        sound.currentTime = 0;
+        sound.play();
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <header>
+    <h1>Jurassic Park & World</h1>
+    <p>Welcome to Jurassic Park and World</p>
+  </header>
+
+  <nav>
+    <a href="Jurassic Park.html">Jurassic Park</a>
+    <a href="Films.html">Films</a>
+    <a href="Dinosaures.html">Dinosaures</a>
+    <a href="Personnages.html">Personnages</a>
+    <a href="Cartes.html">Cartes</a>
+    <a href="Jurassic World.html">Jurassic World</a>
+    <a href="Jeu.html">Jeu</a>
+  </nav>
+
+  <main>
+
+    <section id="danger-card" class="card" style="background-color: #286e2a; cursor: pointer;">
+      <h2>Ne cliquez surtout pas !</h2>
+      <p class="text-success">Vous risquez de réveiller le T-Rex...</p>
+      <img src="./images/logo JP.png" alt="Logo" style="width: 100px; height: auto;">
+    </section>
+
+    <section id="films" class="card" style="background-color: #286e2a;">
+      <h2>Les Films</h2>
+      <p class="text-success">De l'ouverture du parc dans Jurassic Park (1993) à la découverte de l'île Saint-Hubert dans Jurassic Rebirth (2025), découvrez les moments clés de la saga.</p>
+      <img src="./images/logo JP.png" alt="Logo" style="width: 100px; height: auto;">
+    </section>
+
+    <section id="dinosaures" class="card" style="background-color: #286e2a;">
+      <a href="http://localhost/Jurassic%20Park/dinosaure" style="text-decoration: none; color: inherit;">
+        <h2>Dinosaures emblématiques</h2>
+        <div>
+          <p class="text-success"><strong>T-Rex</strong> – Le roi incontesté du parc.</p>
+          <p class="text-success"><strong>Velociraptor</strong> – Intelligent et rapide.</p>
+          <p class="text-success"><strong>Indominus Rex</strong> – Création génétique redoutable.</p>
+        </div>
+        <img src="./images/logo JP.png" alt="Logo" style="width: 100px; height: auto;">
+      </a>
+    </section>
+
+    <section id="personnages" class="card" style="background-color: #286e2a;">
+      <h2>Personnages principaux</h2>
+      <p class="text-success">Rencontrez les héros et scientifiques : Alan Grant, Ellie Sattler, Ian Malcolm, Owen Grady, Claire Dearing…</p>
+      <img src="./images/logo JP.png" alt="Logo" style="width: 100px; height: auto;">
+    </section>
+
+    <section id="cartes" class="card" style="background-color: #286e2a;">
+      <h2>Découvrez les différentes îles</h2>
+      <p class="text-success"></p>
+      <img src="./images/logo JP.png" alt="Logo" style="width: 100px; height: auto;">
+    </section>
+  
+  </main>
+</body>
+</html>
