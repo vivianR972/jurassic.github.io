@@ -1,0 +1,76 @@
+body {
+  background: radial-gradient(circle at center, #1c1c1c, #000000);
+  color: #dcdcdc;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 3px 3px 8px #000;
+}
+
+header h1 {
+  font-size: 3.5em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(30, 30, 30, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+
+h2 {
+  color: #ff3c3c;
+  border-bottom: 2px solid #ff3c3c;
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1.2em;
+}
+
+.dino-image {
+  width: 100%;
+  border-radius: 12px;
+  margin: 30px 0;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.dino-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.dino-facts div {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f0f0f0;
+  border-left: 5px solid #ff3c3c;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #888;
+  font-size: 0.9em;
+}

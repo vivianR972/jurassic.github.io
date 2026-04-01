@@ -1,0 +1,95 @@
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to bottom, #0b1d1d, #1a3c3c);
+  color: #f4f4f4;
+  text-align: center;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: #0b1d1d;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav a {
+  color: #ff3c00;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+  text-shadow: 2px 2px #1a3c3c;
+}
+
+nav a:hover {
+  color: #1a3c3c;
+  text-shadow: 2px 2px #ff3c00;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ff3c00;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 30px;
+}
+
+
+#game {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #ff3c00;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 20px #ff3c00;
+}
+
+
+.question {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+
+button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3cb371;
+}
+
+
+#status {
+  margin-top: 25px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 1px 1px 3px black;
+}
+
+
+.danger {
+  animation: shake 0.5s;
+  color: #ff3c00;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
